@@ -1,4 +1,6 @@
 .dialog {
+  /* restore UA centering wiped out by the global `* { margin: 0 }` reset */
+  margin: auto;
   padding: 0;
   border: none;
   background: transparent;
