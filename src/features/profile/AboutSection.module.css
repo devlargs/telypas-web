@@ -1,0 +1,21 @@
+.text {
+  white-space: pre-wrap;
+  max-width: 64em;
+  color: var(--color-ink-soft);
+}
+
+.placeholder {
+  color: var(--color-sage);
+  font-style: italic;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.editorActions {
+  display: flex;
+  gap: var(--space-2);
+}

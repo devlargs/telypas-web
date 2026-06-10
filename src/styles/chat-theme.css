@@ -1,0 +1,112 @@
+/* Telypas theme over stream-chat-react v2 CSS — paper, ink, and acid lime. */
+
+.str-chat {
+  --str-chat__font-family: var(--font-body);
+  --str-chat__primary-color: var(--color-forest);
+  --str-chat__active-primary-color: var(--color-ink);
+  --str-chat__on-primary-color: var(--color-paper);
+  --str-chat__background-color: var(--color-paper);
+  --str-chat__secondary-background-color: var(--color-paper);
+  --str-chat__primary-surface-color: var(--color-lime);
+  --str-chat__primary-surface-color-low-emphasis: var(--color-lime-dim);
+  --str-chat__surface-color: var(--color-paper-dim);
+  --str-chat__secondary-surface-color: var(--color-paper-raised);
+  --str-chat__text-color: var(--color-ink);
+  --str-chat__text-low-emphasis-color: var(--color-sage);
+  --str-chat__danger-color: var(--color-danger);
+  --str-chat__message-bubble-color: var(--color-ink);
+  --str-chat__border-radius-circle: var(--radius-2);
+  --str-chat__avatar-background-color: var(--color-ink);
+  --str-chat__avatar-color: var(--color-lime);
+  --str-chat__cta-button-border-radius: var(--radius-1);
+  --str-chat__message-bubble-border-radius: var(--radius-2);
+  --str-chat__message-input-border-radius: var(--radius-1);
+  --str-chat__channel-preview-active-background-color: var(--color-lime-dim);
+  --str-chat__channel-preview-hover-background-color: var(--color-paper-dim);
+  --str-chat__unread-badge-background-color: var(--color-ink);
+  --str-chat__unread-badge-color: var(--color-lime);
+}
+
+/* own messages: acid lime bubble with ink text */
+.str-chat__message--me .str-chat__message-bubble {
+  background: var(--color-lime);
+  color: var(--color-ink);
+  border: 1px solid var(--color-ink);
+}
+
+.str-chat__message-bubble {
+  border: var(--hairline);
+}
+
+/* channel previews: hairline separated rows with a lime rule when active */
+.str-chat__channel-preview-messenger {
+  border-bottom: var(--hairline);
+  border-radius: 0;
+  margin: 0;
+  position: relative;
+}
+
+.str-chat__channel-preview-messenger--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-lime);
+}
+
+.str-chat__channel-preview-messenger .str-chat__channel-preview-messenger--name {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* header */
+.str-chat__channel-header {
+  border-bottom: var(--hairline-strong);
+  background: var(--color-paper);
+}
+
+.str-chat__channel-header .str-chat__channel-header-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+}
+
+/* input: square-ish with ink border */
+.str-chat__message-input {
+  border-top: var(--hairline-strong);
+  background: var(--color-paper);
+}
+
+.str-chat__message-textarea-container {
+  border: var(--hairline-strong) !important;
+  border-radius: var(--radius-1) !important;
+  background: var(--color-paper-raised);
+}
+
+.str-chat__message-input .str-chat__send-button {
+  background: var(--color-ink);
+  border-radius: var(--radius-1);
+}
+
+.str-chat__message-input .str-chat__send-button svg path {
+  fill: var(--color-lime);
+}
+
+/* misc */
+.str-chat__channel-list-messenger {
+  background: var(--color-paper);
+}
+
+.str-chat__list {
+  background: var(--color-paper);
+}
+
+.str-chat__thread {
+  border-left: var(--hairline-strong);
+}
+
+.str-chat__date-separator-line {
+  background: rgba(26, 43, 22, 0.25);
+}

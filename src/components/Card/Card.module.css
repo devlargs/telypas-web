@@ -1,0 +1,17 @@
+.card {
+  background: var(--color-paper-raised);
+  border: var(--hairline-strong);
+  border-radius: var(--radius-2);
+  padding: var(--space-5);
+}
+
+.hover {
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 3px 3px 0 var(--color-ink);
+}

@@ -1,0 +1,20 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.inputWrap {
+  max-width: 520px;
+}
+
+.inputWrap input {
+  font-size: var(--text-lg);
+  padding: 14px 16px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}

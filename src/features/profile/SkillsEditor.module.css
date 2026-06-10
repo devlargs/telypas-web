@@ -1,0 +1,51 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+}
+
+.placeholder {
+  color: var(--color-sage);
+  font-style: italic;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.tagInput {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  background: var(--color-paper-raised);
+  border: var(--hairline-strong);
+  border-radius: var(--radius-1);
+}
+
+.tagInput:focus-within {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 1px;
+}
+
+.input {
+  flex: 1;
+  min-width: 160px;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.editorActions {
+  display: flex;
+  gap: var(--space-2);
+}

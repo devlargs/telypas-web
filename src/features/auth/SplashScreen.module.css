@@ -1,0 +1,28 @@
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-paper);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  font-variation-settings: 'WONK' 1;
+  animation: breathe 1.4s var(--ease-out) infinite alternate;
+}
+
+.dot {
+  color: var(--color-forest);
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}

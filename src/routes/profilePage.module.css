@@ -1,0 +1,18 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 880px;
+}
+
+.signOutRow {
+  display: flex;
+  border-top: var(--hairline-strong);
+  padding-top: var(--space-5);
+}
+
+@media (min-width: 641px) {
+  .signOutRow {
+    display: none;
+  }
+}

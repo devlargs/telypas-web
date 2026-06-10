@@ -1,0 +1,106 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
+  min-height: 100vh;
+}
+
+.brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-8) clamp(var(--space-5), 6vw, var(--space-8));
+  background: var(--color-ink);
+  color: var(--color-paper);
+  overflow: hidden;
+}
+
+.wordmark {
+  position: absolute;
+  top: var(--space-5);
+  left: clamp(var(--space-5), 6vw, var(--space-8));
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  font-variation-settings: 'WONK' 1;
+  color: var(--color-lime);
+}
+
+.statement {
+  font-size: var(--text-3xl);
+  font-weight: 560;
+  font-variation-settings: 'WONK' 1;
+  max-width: 13em;
+}
+
+.accent {
+  color: var(--color-lime);
+  font-style: italic;
+}
+
+.tagline {
+  font-size: var(--text-lg);
+  color: rgba(247, 244, 236, 0.7);
+  max-width: 30em;
+}
+
+.marquee {
+  position: absolute;
+  bottom: var(--space-5);
+  left: 0;
+  right: 0;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: rgba(247, 244, 236, 0.45);
+}
+
+.marquee span {
+  animation: scroll 36s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.formPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6) var(--space-5);
+}
+
+.formInner {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    min-height: 38vh;
+    justify-content: flex-end;
+    padding-bottom: var(--space-7);
+  }
+
+  .statement {
+    font-size: var(--text-2xl);
+  }
+
+  .tagline,
+  .marquee {
+    display: none;
+  }
+}

@@ -1,0 +1,57 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 3px 10px;
+  background: var(--color-paper-dim);
+  border: var(--hairline);
+  border-radius: var(--radius-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-ink);
+}
+
+.interactive {
+  cursor: pointer;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.interactive:hover {
+  border-color: var(--color-ink);
+  background: var(--color-lime-dim);
+}
+
+.active {
+  background: var(--color-lime);
+  border-color: var(--color-ink);
+  font-weight: 600;
+}
+
+.removable {
+  padding-right: 4px;
+}
+
+.removeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-1);
+  background: transparent;
+  font-size: var(--text-base);
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-ink-soft);
+  transition: all var(--dur-fast) var(--ease-out);
+}
+
+.removeButton:hover {
+  background: var(--color-ink);
+  color: var(--color-lime);
+}

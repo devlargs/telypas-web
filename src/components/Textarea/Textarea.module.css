@@ -1,0 +1,31 @@
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px 12px;
+  background: var(--color-paper-raised);
+  border: var(--hairline-strong);
+  border-radius: var(--radius-1);
+  font-size: var(--text-base);
+  line-height: 1.55;
+  resize: vertical;
+  transition:
+    background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.textarea::placeholder {
+  color: var(--color-sage);
+}
+
+.textarea:hover {
+  background: #fffef9;
+}
+
+.textarea:focus-visible {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 1px;
+}
+
+.invalid {
+  border-color: var(--color-danger);
+}

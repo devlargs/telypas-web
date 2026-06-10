@@ -1,0 +1,53 @@
+:root {
+  /* color */
+  --color-paper: #f7f4ec;
+  --color-paper-raised: #fffdf6;
+  --color-paper-dim: #efeadd;
+  --color-ink: #1a2b16;
+  --color-ink-soft: rgba(26, 43, 22, 0.72);
+  --color-lime: #c6f432;
+  --color-lime-dim: #e4fa9e;
+  --color-forest: #3f6e35;
+  --color-sage: #8a917e;
+  --color-danger: #b3401f;
+
+  --hairline: 1px solid rgba(26, 43, 22, 0.25);
+  --hairline-strong: 1px solid var(--color-ink);
+
+  /* type */
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'Archivo Variable', system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-3xl: clamp(2.5rem, 6vw, 4.5rem);
+
+  --tracking-label: 0.08em;
+
+  /* structure */
+  --radius-1: 3px;
+  --radius-2: 6px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 200ms;
+  --dur-slow: 250ms;
+
+  /* layout */
+  --shell-max: 1200px;
+  --nav-height: 64px;
+}

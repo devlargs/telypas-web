@@ -1,0 +1,68 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-bottom: var(--space-6);
+  border-bottom: var(--hairline-strong);
+}
+
+.headline {
+  font-size: var(--text-3xl);
+  max-width: 14em;
+}
+
+.accent {
+  font-style: italic;
+  font-variation-settings: 'WONK' 1;
+  background: linear-gradient(
+    transparent 62%,
+    var(--color-lime) 62%,
+    var(--color-lime) 94%,
+    transparent 94%
+  );
+}
+
+.count {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--color-sage);
+  margin-bottom: var(--space-4);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: var(--hairline);
+  border-radius: var(--radius-2);
+  background: var(--color-paper-raised);
+}
+
+.skeletonTop {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.skeletonLines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
